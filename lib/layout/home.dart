@@ -18,23 +18,23 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.white,
           image:
               DecorationImage(image: AssetImage("assets/images/pattern.png"))),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        drawer: Drawer(),
+        drawer: const Drawer(),
         appBar: AppBar(
-          iconTheme: IconThemeData(color: Colors.white),
+          iconTheme: const IconThemeData(color: Colors.white),
           backgroundColor: Colors.green,
           centerTitle: true,
-          shape: OutlineInputBorder(
+          shape: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.transparent),
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20))),
-          title: Text(
+          title: const Text(
             "News",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
